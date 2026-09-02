@@ -2,7 +2,10 @@
 
 Public dashboard of Hospital Authority specialist outpatient new-case waiting times by cluster, the two published elective surgeries (cataract, total joint replacement), investigation caveats, and private hospital fee ranges.
 
-**Live site (GitHub Pages):** https://philosopherkk.github.io/hk-hospital-waiting-times/
+**Live site:** https://philosopherkk.github.io/waiting/
+
+**Work repo:** https://github.com/philosopherkk/hk-hospital-waiting-times
+
 
 ## Version
 
