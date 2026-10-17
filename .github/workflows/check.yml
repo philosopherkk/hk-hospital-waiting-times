@@ -1,0 +1,23 @@
+name: Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  no-pages-workflow:
+    name: Fail if pages.yml exists
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reject .github/workflows/pages.yml
+        run: bash scripts/check-no-pages-workflow.sh
+      - name: Fixture that restores pages.yml must fail
+        run: bash scripts/fixture-restored-pages-workflow.sh
